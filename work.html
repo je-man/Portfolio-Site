@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jennifer Manaytay - Portfolio</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/main-logo.png" type="image/x-icon" />
+    <!--CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--font link-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Hind&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <!--Header including the logo and main navigation-->
+    <header class="main-header">
+      <!-- Add your logo here -->
+      <img
+        src="img/web-logo.png"
+        height="50px" width="60px"
+        alt="logo"
+        class="page-header__item"
+      />
+
+      <nav class="main-nav page-header__item highlightTextIn">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home
+            </a>
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              role="menuitem"
+              class="navigation-list__item"
+              >About Us
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Projects
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--End of header-->
+
+    <!--Main Content-->
+    <section>
+      <div class="project project-one">
+          <a href="https://jm-pokemon.netlify.app" target="_blank"><img src="img/project-pokedex-pic.png" width="800px" height="500px"></a>
+      </div>
+  </section>
+
+  <section>
+      <div class="project project-three">
+          <a href="https://je-man.github.io/my-quiz-app/" target="_blank"><img src="img/project-quizapp-pic.png" width="800px" height="500px"></a>
+      </div>
+  </section>
+
+  <section>
+      <div class="project project-two">
+          <a href="https://ourflixapp.herokuapp.com/" target="_blank"><img src="img/project-movies-pic.png" width="800px" height="500px"></a>
+      </div>
+  </section>
+  
+  <section>
+      <div class="project project-four">
+          <a href="https://je-man.github.io/todo-app/" target="_blank"><img src="img/project-todo-pic.png" width="800px" height="500px"></a>
+      </div>
+  </section>
+
+  <section style="text-align: center;">
+      <h6>Have an exciting project where you need some help?</h6>
+      <p>Send me over an email, and let's talk! </p>
+  </section>
+
+  <section>
+      <button class="open-button" onclick="openForm()">Email</button>
+
+      <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+          <h3>Leave a message</h3>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="message"><b>Message</b></label>
+          <textarea placeholder="Write something.." name="message" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+      </div>
+  </section>
+    <!--End of main content-->
+
+    <!--Footer with links to social media profiles-->
+    <footer class="page-footer">
+      <p>Find me on</p>
+
+      <div class="social-media">
+        <!--github logo -->
+        <a href="https://www.github.com" target="_blank"
+          ><img
+            src="img/github_icon.svg"
+            width="30"
+            height="30"
+            alt="Github
+                logo"
+          />
+        </a>
+
+        <!--twitter logo -->
+        <a href="https://www.twitter.com" target="_blank">
+          <img
+            src="img/twitter_icon.svg"
+            width="30"
+            height="30"
+            alt="twitter logo"
+          />
+        </a>
+
+        <!--linkedin logo -->
+        <a href="https://www.linkedin.com" target="_blank">
+          <img
+            src="img/linkedin_icon.svg"
+            style="width: 30px; height: 30px;"
+            alt="LinkedIn logo"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <!--javascript link-->
+    <script src="js/tota11y.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
