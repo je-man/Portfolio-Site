@@ -9,10 +9,10 @@ body {
     padding: 0;
     font-size: 1.2 rem;
     min-height: 100vh;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .main-header {
-    /* background-color: black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,7 @@ body {
 }
 
 .main-nav a:hover {
-    border-bottom: 5px solid #dacdff;
+    border-bottom: 5px solid #727dbd;
 }
 
 .container {
@@ -101,6 +101,73 @@ body {
     background-color: #fefaf6;
 }
 
+.contact-content {
+    padding: 20px;
+    border-radius: 25px;
+    height: 600px;
+    color: white;
+    margin-bottom: 4rem;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(180.14deg,#142c69 .12%,rgba(20,44,105,0) 62.01%),#008081;
+}
+
+.contact-content h2 {
+    text-align: center;
+}
+
+.contact-info {
+    width: 50%;
+    float: left;
+}
+
+.contact-info a {
+    color:#fff;
+}
+
+.contact-form {
+    float: right;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-form form i {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    color:#ec8364;
+}
+
+.contact-form form input {
+    text-align: center;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #727dbd;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ec8364;
+  }
+
 /* project styles */
 
 .project{
@@ -110,10 +177,11 @@ body {
 }
 
 .project img {
-    padding: 40px;
+    padding: 50px;
 }
 
-.project-two{
+
+.project-two, .project-five{
     background: linear-gradient(180.14deg,#142c69 .12%,rgba(20,44,105,0) 62.01%),#008081;
 }
 
@@ -129,7 +197,95 @@ body {
     background: linear-gradient(223.65deg,rgba(10,207,131,0) 60.59%,rgba(10,207,131,.62) 113.24%),#191919;
 }
 
+.project-page-main {
+    text-align: center;
+}
+
+/* overlay */
+
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+    width: 80%;
+}
+.hvrbox img {
+	max-width: 100%;
+    margin: 0 auto;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+    background-color: #727dbd;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+.btn {
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 1px white solid;
+}
+
+.hvrbox-text a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hvrbox-text a:hover {
+    background-color: #ec8364;
+    color: #fff;
+}
+
 /* about style */
+
+.project-page-title h4 {
+    padding: 20px 0;
+    text-align: center;
+}
 
 .profile-pic {
     width: 50%;
@@ -139,21 +295,32 @@ body {
 }
 
 .profile-pic img {
-    border-radius: 25px;
+    border-radius: 30px;
+    box-shadow: 4px 4px #ec8364;
 }
 
 .profile{
     width: 100%;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .profile-sub  {
    height: 350px;
    text-align: left;
    line-height: 1.7;
+   font-size: 25px;
+}
+
+.profile-title {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    color:#ec8364;
 }
 
 .skills {
-    margin-bottom: 100px;
+    margin: 100px 0;
 }
 
 .skills ul {
@@ -177,34 +344,15 @@ body {
     width: 50%;
 }
 
-/*
-.skills li {
-    margin-left: 50px ;
-    border: 1px solid #ffeaee;
-    padding: 20px;
-    margin-bottom: 40px;
-} */
-
-
 .skill{
     width: 100%;
     max-width: 500px; 
-    /* padding: 0 20px;*/
 }
-
-/* .skill li {
-    display: flex;
-} */
-
-/* .skill{
-    width: 50%;
-} */
 
 
 .skill-name{
     font-size: 18px;
     font-weight: 700;
-    /* text-transform: uppercase; */
     margin: 35px 0;
 }
 
@@ -219,12 +367,12 @@ body {
 
 .skill-per{
     height: 20px;
-    /* background-color: #008081; */
     background-image: linear-gradient(to right, #ba93bf, #f8c6ff 75%, #ffeec4);
     border-radius: 8px;
     width: 0;
     transition: 1s linear;
     position: relative;
+    
 }
 
 .skill-per::before{
@@ -252,11 +400,54 @@ body {
     border-radius: 2px;
 }
 
+/* footer page */
+
+hr {
+    border: .5px solid #727dbd;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.page-footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-media a {
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #727dbd;
+}
+
+
+/* Contact Page */
+.contact {
+    padding: 0px auto;
+    width: 100%;
+    height: 600px;
+    
+}
+
+.contact-img{
+    width: 50%;
+    float: right;
+    margin-top: -100px;
+    
+}
+
+.contact-form{
+    margin: 0px auto;
+   float: left;
+   width: 50%;
+}
 
 /* Pop up */
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-    background-color: #ba93bf;
+    background-color: #727dbd;
     color: white;
     padding: 16px 10px;
     border-radius: 45%;
@@ -274,17 +465,17 @@ body {
     position: fixed;
     bottom: 0;
     right: 15px;
-    border: 3px solid #ba93bf;
+    border: 3px solid #ec8364;
     z-index: 9;
     padding: 10px;
-    background-color: #ba93bf;
+    background-color: #ec8364;
   }
   
   /* Add styles to the form container */
   .form-container {
     max-width: 300px;
     padding: 10px;
-    background-color: #ba93bf;
+    background-color: #ec8364;
     color: white;
   }
   
@@ -305,8 +496,8 @@ body {
   
   /* Set a style for the submit/login button */
   .form-container .btn {
-    background-color: #4b3235;
-    color: white;
+      background-color: #eef9ff;
+    color: #ec8364;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
@@ -317,35 +508,84 @@ body {
   
   /* Add a red background color to the cancel button */
   .form-container .cancel {
-    background-color: #4b3235;
+    background-color: #eef9ff;
+    color: #ec8364;
   }
   
   /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
-}
+  }
+  
+  
 
 /* media queries */
 /* small screen  */
 @media only screen and (max-width: 600px) {
-    .project img{
-        width: 400px;
-        height: 400px;
-    }
-
+    /* about me */
     .profile-pic {
         float: none;
-        width: auto;
+        width: auto; 
     }
 
-    .profile-sub h1 {
-        font-size: 26px;
+    .profile-pic img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .profile-sub  {
+        margin-top: 10px;
+    }
+
+    .profile-sub p {
+        font-size: 20px;
+    }
+
+    .profile-title{
+        font-size: 38px;
+    }
+
+    .skills {
+        margin-top: -80px;
+    }
+
+    .skills h1 {
+        text-align: center;
+    }
+
+    /* contact form */
+
+    .contact-content {
+        margin-top: -50px;
+    }
+
+    .contact-content form {
+        margin-left: 10px;
+        padding: 0px;
+    }
+
+    .contact-info {
+        font-size: 15px;
+    }
+
+    /* projects */
+    .project img{
+        width: 400px;
+        height: 320px;
+    }
+
+    .project-page-title h3{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+
+    .lets-talk h2 {
+        font-size: 16px;
+        margin-top: -30px;
+    }
+
+    .hvrbox-text p{
+        font-size: 15px;
     }
 }
 
-/* @media only screen and (min-width: 600px) {
-    .project img{
-        width: 600px;
-        height: 500px;
-    }
-} */

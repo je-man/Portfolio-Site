@@ -4,14 +4,12 @@
     <meta charset="utf-8" />
     <title>Jennifer Manaytay - Portfolio</title>
     <!--favicon-->
-    <link rel="shortcut icon" href="img/main-logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/web-logo.png" type="image/x-icon" />
     <!--CSS link -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!--font link-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Hind&family=Lato&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=M+PLUS+Rounded+1c:wght@100;400;500&display=swap" rel="stylesheet">
   </head>
   <body class="container">
     <!--Header including the logo and main navigation-->
@@ -22,7 +20,7 @@
         height="50px" width="60px"
         alt="logo"
         class="page-header__item"
-      />
+        />
 
       <nav class="main-nav page-header__item highlightTextIn">
         <ul role="menubar" class="navigation-list">
@@ -30,21 +28,19 @@
             <a
               href="index.html"
               role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home
+              class="navigation-list__item navigation-list__item--active">Home
             </a>
           </li>
           <li role="presentation">
             <a
               href="about.html"
               role="menuitem"
-              class="navigation-list__item"
-              >About Us
+              class="navigation-list__item">About
             </a>
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Projects
+            <a href="projects.html" role="menuitem"
+              class="navigation-list__item">Projects
             </a>
           </li>
         </ul>
@@ -53,69 +49,132 @@
     <!--End of header-->
 
     <!--Main Content-->
-    <section>
-      <div class="project project-one">
-          <a href="https://jm-pokemon.netlify.app" target="_blank"><img src="img/project-pokedex-pic.png" width="800px" height="500px"></a>
-      </div>
-  </section>
+    <div class="project-page-main">
+      <section class="project-page-title">
+        <h3>Here are a few design projects I've worked on recently. </h3>
+      </section>
+      <section>
+        <div class="project project-one hvrbox">
+          <img src="img/project-pokedex-pic.png" class="hvrbox-layer_bottom"
+            width="800px"
+            height="500px">
+          <div class="hvrbox-layer_top">
+            <div class="hvrbox-text">
+              <h3>Pokedex</h3>
+              <p>An application created with JQuery that loads data from an API
+                and let users view information about Pokemons.</p>
+              <a href="https://jm-pokemon.netlify.app"
+                class="btn" target="_blank">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section>
-      <div class="project project-three">
-          <a href="https://je-man.github.io/my-quiz-app/" target="_blank"><img src="img/project-quizapp-pic.png" width="800px" height="500px"></a>
-      </div>
-  </section>
+      <section>
+        <div class="project project-three hvrbox">
+          <img
+            src="img/project-quizapp-pic.png" class="hvrbox-layer_bottom"
+            width="800px" height="500px">
+          <div class="hvrbox-layer_top">
+            <div class="hvrbox-text">
+              <h3>Quiz</h3>
+              <p>An application created with AngularJS that allow users to take
+                quiz.</p>
+              <a href="https://je-man.github.io/my-quiz-app/"
+                class="btn" target="_blank">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section>
-      <div class="project project-two">
-          <a href="https://ourflixapp.herokuapp.com/client" target="_blank"><img src="img/project-movies-pic.png" width="800px" height="500px"></a>
-      </div>
-  </section>
-  
-  <section>
-      <div class="project project-four">
-          <a href="https://je-man.github.io/todo-app/" target="_blank"><img src="img/project-todo-pic.png" width="800px" height="500px"></a>
-      </div>
-  </section>
+      <section>
+        <div class="project project-two hvrbox">
+          <img
+            src="img/project-movies-pic.png" class="hvrbox-layer_bottom"
+            width="800px" height="500px">
+          <div class="hvrbox-layer_top">
+            <div class="hvrbox-text">
+              <h3>Movie Escape</h3>
+              <p>An application developed with React that allow users to access
+                to different kinds of movies. Users also able to create profile
+                and lists of their favorite movies.</p>
+              <a href="https://ourflixapp.herokuapp.com/client"
+                class="btn" target="_blank">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section style="text-align: center;">
-      <h6>Have an exciting project where you need some help?</h6>
+      <section>
+        <div class="project project-four hvrbox">
+          <img src="img/project-todo-pic.png" class="hvrbox-layer_bottom"
+            width="800px" height="500px">
+          <div class="hvrbox-layer_top">
+            <div class="hvrbox-text">
+              <h3>Todo</h3>
+              <p>An application developed with VueJS that allow users to add,
+                edit, delete and complete tasks.</p>
+              <a href="https://je-man.github.io/todo-app/"
+                class="btn" target="_blank">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="project project-five hvrbox">
+          <img src="img/chat-app.png" class="hvrbox-layer_bottom" width="350px"
+            height="500px">
+          <div class="hvrbox-layer_top">
+            <div class="hvrbox-text">
+              <h3>Chat App</h3>
+              <p>An application developed with React Native
+                for mobile devices that provide users with a chat interface to
+                chat, share images and location.</p>
+              <a href="https://github.com/je-man/chat-app"
+                class="btn" target="_blank">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="lets-talk" style="text-align: center;">
+      <h2>Have an exciting project where you need some help?</h2>
       <p>Send me over an email, and let's talk! </p>
-  </section>
+    </section>
 
-  <section>
+    <section>
       <button class="open-button" onclick="openForm()">Email</button>
 
       <div class="form-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
+        <form action="/action_page.php" class="form-container">
           <h3>Leave a message</h3>
 
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
-
           <label for="message"><b>Message</b></label>
           <textarea placeholder="Write something.." name="message" required></textarea>
-
           <button type="submit" class="btn">Send</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
+        </form>
       </div>
-  </section>
+    </section>
     <!--End of main content-->
 
     <!--Footer with links to social media profiles-->
+    <hr>
     <footer class="page-footer">
       <p>Find me on</p>
 
       <div class="social-media">
         <!--github logo -->
-        <a href="https://www.github.com" target="_blank"
-          ><img
+        <a href="https://www.github.com" target="_blank"><img
             src="img/github_icon.svg"
             width="30"
             height="30"
             alt="Github
-                logo"
-          />
+            logo"
+            />
         </a>
 
         <!--twitter logo -->
@@ -125,7 +184,7 @@
             width="30"
             height="30"
             alt="twitter logo"
-          />
+            />
         </a>
 
         <!--linkedin logo -->
@@ -134,7 +193,7 @@
             src="img/linkedin_icon.svg"
             style="width: 30px; height: 30px;"
             alt="LinkedIn logo"
-          />
+            />
         </a>
       </div>
     </footer>
